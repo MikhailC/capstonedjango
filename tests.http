@@ -1,0 +1,18 @@
+POST http://127.0.0.1:8000/api-token-auth/
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "1"
+
+}
+
+####
+
+GET  http://127.0.0.1:8000/restaurant/booking/tables/
+Content-Type: application/json
+Authorization: Token f8add6275f06378c6fa78e406b0ab890c1051ad0
+
+
+###
+f8add6275f06378c6fa78e406b0ab890c1051ad0
