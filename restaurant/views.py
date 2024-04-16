@@ -1,6 +1,6 @@
 from django.shortcuts import render
 import django.views
-from rest_framework import viewsets
+from rest_framework import viewsets, generics
 from rest_framework.generics import RetrieveUpdateAPIView, ListCreateAPIView, DestroyAPIView
 from rest_framework.views import APIView
 
@@ -8,6 +8,7 @@ from restaurant import serializers
 from restaurant.models import Menu, Booking
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+
 
 
 # Create your views here.
@@ -32,8 +33,9 @@ class BookingViewSet(viewsets.ModelViewSet):
 
 
 class HelloView(APIView):
-   # permissions_classes = [IsAuthenticated]  # <-------- Only authenticated users can access this view
+    # permissions_classes = [IsAuthenticated]  # <-------- Only authenticated users can access this view
 
     def get(self, request):
         context = {"message": "Hello, World!"}  # <------ Response to the client
         return Response(context)
+

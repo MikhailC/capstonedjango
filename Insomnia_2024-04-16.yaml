@@ -1,0 +1,157 @@
+_type: export
+__export_format: 4
+__export_date: 2024-04-16T18:07:32.474Z
+__export_source: insomnia.desktop.app:v8.6.1
+resources:
+  - _id: req_5c71587bb0094b69b3558fe9e0f932b1
+    parentId: wrk_2ea7f037d23f4ea8904ad3d28e290751
+    modified: 1713290366094
+    created: 1713290330253
+    url: http://127.0.0.1:8000/api/menu-items/
+    name: New Request
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1713290330253
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_2ea7f037d23f4ea8904ad3d28e290751
+    parentId: null
+    modified: 1713289915010
+    created: 1713289915010
+    name: littlelemon
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_152a04d7a7d74eba9a3c8e8b0e1d2647
+    parentId: wrk_2ea7f037d23f4ea8904ad3d28e290751
+    modified: 1713290429251
+    created: 1713289941930
+    url: http://127.0.0.1:8000/api/menu-items/
+    name: New Request
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"id": 2,
+        		"title": "test1",
+        		"price": "4.00",
+        		"inventory": 1
+        	}
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1713289941930
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f7be2d88cb194274b8e28ebc15352a46
+    parentId: wrk_2ea7f037d23f4ea8904ad3d28e290751
+    modified: 1713290756115
+    created: 1713290451187
+    url: http://127.0.0.1:8000/api/menu-items/1/
+    name: New Request
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"id": 1,
+        		"title": "test1dddd",
+        		"price": "144.00",
+        		"inventory": 1
+        	}
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1712552067771
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e3575f14ae93400aa2033625b0e79deb
+    parentId: wrk_2ea7f037d23f4ea8904ad3d28e290751
+    modified: 1713290481559
+    created: 1713290476468
+    url: http://127.0.0.1:8000/api/menu-items/1
+    name: New Request
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"id": 1,
+        		"title": "test1dddd",
+        		"price": "14.00",
+        		"inventory": 1
+        	}
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.6.1
+    authentication: {}
+    metaSortKey: -1712183130691.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_a7baa278513c4e3bd3a63f181a4c75cc39dd7051
+    parentId: wrk_2ea7f037d23f4ea8904ad3d28e290751
+    modified: 1713289915012
+    created: 1713289915012
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1713289915012
+    _type: environment
+  - _id: jar_a7baa278513c4e3bd3a63f181a4c75cc39dd7051
+    parentId: wrk_2ea7f037d23f4ea8904ad3d28e290751
+    modified: 1713289915013
+    created: 1713289915013
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
